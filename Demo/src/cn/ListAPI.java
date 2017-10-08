@@ -22,14 +22,6 @@ public class ListAPI {
 		str.substring(0, str.length()-1);
 		System.out.println(buil.toString()+"\n"+str);
 	}
-	
-	
-	
-//	for (Map.Entry<String, String> entry : params.entrySet()) {
-//        url.append(entry.getKey()).append("=");
-//        url.append(URLEncoder.encode(entry.getValue(), encoding));// ±àÂë
-//        url.append('&');
-//    }
-//    url.deleteCharAt(url.length() - 1);
+
 
 }
