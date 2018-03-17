@@ -24,7 +24,7 @@ public class NumberAPI {
 	doubleValue()          将BigDecimal对象中的值以双精度数返回。
 	floatValue()             将BigDecimal对象中的值以单精度数返回。
 	longValue()             将BigDecimal对象中的值以长整数返回。
-	intValue()               将BigDecimal对象中的值以整数返回。*/
+	intValue()               将BigDecimal对象中的值以整数返回。 */
 	public static void main(String[] args) {
 		BigDecimal aDouble =new BigDecimal(1.22);
         System.out.println("construct with a double value: " + aDouble);
