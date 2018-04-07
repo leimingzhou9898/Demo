@@ -22,13 +22,19 @@ public class test {
         long b1 = Math.round(-11.5);System.out.println(a1+"   "+b1);
         
 //        (1)如果两个对象相同（equals方法返回true），那么它们的hashCode值一定要相同；(2)如果两个对象的hashCode相同，它们并不一定相同。
-        B ab = new B();
-        ab = new B();
+        
         
         System.out.println(reverse("abcdefgh"));//字符串反转
         
         List<Object> list=new ArrayList<>();
         List<Object> synchronizedList = Collections.synchronizedList(list);
+        A ab = new B();
+        ab = new B();
+//        a1b
+//        c2
+//        3b
+//        c2
+//        3
 	}
 	
 	public static String reverse(String originStr) {
@@ -44,29 +50,29 @@ public class test {
 class A {
 	 
     static {
-        System.out.print("1");
+        System.out.print("a");
     }
  
     public A() {
-        System.out.print("2");
+        System.out.print("c");
     }
     
     {
-		System.out.println("7777");
+		System.out.println("b");
 	}
 }
  //1a77772niubib   77772niubib
 class B extends A{
 	
 	{
-		System.out.println("niubi");
+		System.out.println("2");
 	}
  
     static {
-        System.out.print("a");
+        System.out.print("1");
     }
  
     public B() {
-        System.out.print("b");
+        System.out.print("3");
     }
 }
